@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+wikipedia(https://ja.wikipedia.org/wiki/)の後につづく単語をどーぞ！（例：リンゴ）
+<form action="/urls" method="get">
+    <input type="text" name="original_url" size="30" maxlength="1000" style="ime-mode:active">
+    <input type="submit" value="送信">
+</form>
+<p>{{original_url}}</p>
+{%if original_url != ""%} 🤗関連リンク
+    {%for related_url in related_urls%}
+<p><a href= "{{related_url}}" >{{related_url}}</a></p>
+    {% end %}
+{% end %}
+</body>
+</html>
