@@ -1,6 +1,6 @@
 SearchEngineForSimilarPages
 ----
-You can search similar pages.
+You can search similar wikipedia pages from one wikipedia page's url or title.
 Model is created using word2vec.
 
 ## Description
